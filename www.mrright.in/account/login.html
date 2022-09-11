@@ -1,0 +1,1022 @@
+
+  
+<script>
+    (function (i, s, o, g, r, a, m) {
+        i['GoogleAnalyticsObject'] = r; i[r] = i[r] || function () {
+            (i[r].q = i[r].q || []).push(arguments)
+        }, i[r].l = 1 * new Date(); a = s.createElement(o),
+            m = s.getElementsByTagName(o)[0]; a.async = 1; a.src = g; m.parentNode.insertBefore(a, m)
+    })(window, document, 'script', '../../www.google-analytics.com/analytics.js', 'ga');
+
+    ga('create', 'UA-38317486-1', 'mrright.in');
+    ga('set', 'contentGroup1', 'Public Pages');
+    ga('send', 'pageview');
+
+</script>
+<!DOCTYPE html>
+<html>
+
+<!-- Mirrored from www.mrright.in/account/login by HTTrack Website Copier/3.x [XR&CO'2014], Sat, 10 Sep 2022 02:58:48 GMT -->
+<!-- Added by HTTrack --><meta http-equiv="content-type" content="text/html;charset=utf-8" /><!-- /Added by HTTrack -->
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <title>Login to your Mr. Right account, book and track your cases.</title>
+    <link href="../css/loginbundlef253.css?v=mrBIPwBz-ZCVzJ9X-6cjrKEKvBfaz-EmcRII_LTlex81" rel="stylesheet"/>
+
+    <script src="../js/loginbundlef8e8?v=VVoLWEH8KrU3l8dKhzab5OLygzX9aTUTxvgHAgduIdU1"></script>
+
+    
+    
+    <link href="https://fonts.googleapis.com/css?family=Montserrat:400,500,600,700&amp;subset=latin-ext" rel="stylesheet">
+    
+    <meta name="google-signin-clientid" content="966979939162-2ur6js058lqldn0fb5jjcb8l6c4t6h1a.apps.googleusercontent.com" />
+    <meta name="google-signin-scope" content="profile" />
+    <meta name="google-signin-scope" content="email https://www.googleapis.com/auth/contacts.readonly" />
+    <meta name="google-signin-cookiepolicy" content="single_host_origin" />
+    <script src="../../apis.google.com/js/client_platform.js" async defer></script>
+    
+    <script>
+        
+        window.fbAsyncInit = function () {
+            FB.init({
+                appId: '759107114149632', //This is production Id also,Veer' Client ID: 552507374854859
+                cookie: true,  // enable cookies to allow the server to access
+                // the session
+                xfbml: true,  // parse social plugins on this page
+                version: 'v2.2' // use version 2.2
+            });
+            FB.getLoginStatus(function (response) {
+                statusChangeCallback(response);
+            });
+        };
+
+        // Load the SDK asynchronously
+        (function (d, s, id) {
+            var js, fjs = d.getElementsByTagName(s)[0];
+            if (d.getElementById(id)) return;
+            js = d.createElement(s); js.id = id;
+            js.src = "../../connect.facebook.net/en_US/sdk.js";
+            fjs.parentNode.insertBefore(js, fjs);
+        }(document, 'script', 'facebook-jssdk'));
+    </script>
+
+    <style type="text/css">
+        body {
+            background: #eee;
+            font-family: "Montserrat";
+        }
+
+        .login-box {
+            background-color: #fff;
+            height: calc(100vh);
+            padding: 40px 70px;
+        }
+
+        .welcome-wrapper {
+            overflow: hidden;
+            margin-bottom: 25px;
+        }
+
+        .logo {
+            height: 40px;
+            width: 40px;
+        }
+
+
+        .sign-in-caption {
+            font-family: latoregular,Arial,sans-serif;
+            color: #444;
+        }
+
+        .wrapper-self-service {
+            background: #fff;
+            padding: 50px;
+            color: #333;
+            margin: 7%;
+        }
+
+
+        .image-size {
+            height: 110px;
+            border-radius: 50%;
+            display: block;
+            margin: auto;
+        }
+
+        .border {
+            border-top: 1px solid #eee;
+        }
+
+        .margin-top {
+            margin-top: 23px !important;
+            margin-bottom: 10px;
+        }
+
+        .congo {
+            text-shadow: darkmagenta;
+            font-stretch: semi-condensed;
+            font-weight: 600;
+            /* color: #D88364; */
+            color: rgba(226, 60, 60, 0.95);
+        }
+
+        .warning-login {
+            text-align: center;
+            display: block;
+            margin-top: 10px;
+        }
+
+        .login-option, .signup-option {
+            cursor: pointer;
+            color: #999;
+            margin-top: 40px;
+            float: left;
+        }
+
+        .signup-option-after, .login-option-after {
+            text-decoration: none;
+        }
+
+        .modal-content {
+            border-radius: 0px;
+        }
+
+            .modal-content h3, .modal-content h5 {
+                color: #333;
+            }
+
+        .block {
+            display: block;
+        }
+
+        #existing-accounts {
+            padding: 20px;
+        }
+
+            #existing-accounts .btn {
+                width: 180px;
+                margin: 20px auto 0px;
+                display: block;
+            }
+
+        .phone-option-wrapper {
+            padding-left: 0px;
+            text-align: center;
+        }
+
+        .need-mobile-number-label {
+            margin: 10px;
+            display: block;
+            text-align: center;
+        }
+
+        #new-user-modal {
+            font-family: "Montserrat";
+        }
+
+            #new-user-modal form button, #new-user-modal form input {
+                margin: 10px 0px;
+            }
+
+        .spacer-small {
+            width: 100%;
+            display: block;
+            height: 10px;
+        }
+
+        .social-loader {
+            position: absolute;
+            font-size: 20px;
+            right: 15px;
+            display: none;
+            color: #999;
+        }
+
+        .social-connect {
+            position: relative;
+        }
+
+        .no-worries {
+            margin-top: 20px;
+            margin-bottom: 20px;
+            padding: 0px 20px 0px;
+            text-align: center;
+        }
+
+        .social-case-launcher-forgot-password {
+            cursor: pointer;
+        }
+
+        #new-user-modal .fa-check-square {
+            color: #40d47e;
+        }
+        /*Styles copied from below, i have no idea why they were placed in the bottom in the first place*/
+        .invalid {
+            outline-color: red;
+            /* also need animation and -moz-animation */
+            -webkit-animation: shake .5s linear;
+            animation: shake .5s linear;
+        }
+
+        #password.redBorder {
+            border: 1px solid rgba(231, 76, 60,1.0);
+        }
+        /* also need keyframes and -moz-keyframes */
+        @-webkit-keyframes shake {
+            8%, 41% {
+                -webkit-transform: translateX(-10px);
+            }
+
+            25%, 58% {
+                -webkit-transform: translateX(10px);
+            }
+
+            75% {
+                -webkit-transform: translateX(-5px);
+            }
+
+            92% {
+                -webkit-transform: translateX(5px);
+            }
+
+            0%, 100% {
+                -webkit-transform: translateX(0);
+            }
+        }
+
+        @keyframes shake {
+            8%, 41% {
+                transform: translateX(-10px);
+            }
+
+            25%, 58% {
+                transform: translateX(10px);
+            }
+
+            75% {
+                transform: translateX(-5px);
+            }
+
+            92% {
+                transform: translateX(5px);
+            }
+
+            0%, 100% {
+                transform: translateX(0);
+            }
+        }
+
+        .redColor {
+            color: rgba(170, 63, 63, 1);
+            font-family: verdana !important;
+            font-size: 14px;
+        }
+
+        input.hasFeedback {
+            padding-right: 38px;
+        }
+
+        .inputFeedback {
+            position: absolute;
+            height: 30px;
+            width: 30px;
+            right: 5px;
+            top: 8px;
+        }
+
+        i.glyphicon.glyphicon-ok-circle {
+            font-size: 17px;
+            color: #27ae60;
+        }
+
+        i.glyphicon.glyphicon-exclamation-sign {
+            font-size: 17px;
+            color: #8b8b8b;
+        }
+
+        .flex-box {
+            display: flex;
+            margin: 0;
+        }
+
+        @media screen and (max-width:768px) {
+            .flex-box {
+                display: block;
+            }
+
+            .login-box {
+                padding: 40px;
+            }
+
+            .mobile-app-cta {
+                display: none;
+            }
+        }
+
+        .android-app-link img, .ios-app-link img {
+            max-width: 100px;
+            margin: 10px 5px;
+            opacity: 0.4;
+            text-decoration: none;
+        }
+
+        .android-app-link:hover img, .ios-app-link:hover img {
+            opacity: 0.7;
+        }
+
+        .mobile-app-cta {
+            position: absolute;
+            bottom: 0;
+            left: 50%;
+            width: 600px;
+            margin-left: -300px;
+        }
+
+        .mobile-app-shot {
+            margin-top: 40px;
+            max-width: 500px;
+        }
+
+        h2 {
+            font-weight: 700;
+            font-family: "Montserrat";
+        }
+
+
+        .notification {
+            position: fixed;
+            bottom: 30px;
+            right: 30px;
+            padding: 15px;
+            background: rgba(0,0,0,0.8);
+            color: #fff;
+            z-index: 10000;
+            width: 400px;
+            min-height: 60px;
+            border-radius: 5px;
+            font-weight: 300;
+        }
+
+        #input--otp {
+            text-align: center;
+            letter-spacing: 5px;
+            font-weight: bold;
+        }
+
+        .btn--new-google-login .btn--active, .btn--new-google-login .btn--focus {
+            display: none;
+        }
+
+        .btn--new-google-login:active .btn--normal, .btn--new-google-login:active .btn--focus {
+            display: none;
+        }
+
+        .btn--new-google-login:focus .btn--normal {
+            display: none;
+        }
+
+        .btn--new-google-login:active .btn--active {
+            display: block;
+        }
+
+        .btn--new-google-login:focus {
+            outline: none;
+        }
+
+            .btn--new-google-login:focus .btn--focus {
+                display: block;
+            }
+
+        a.btn--new-facebook-login {
+            cursor: pointer;
+            background-color: #4267B2;
+            color: #fff;
+            display: inline-block;
+            font-family: helvetica;
+            padding: 10px 15px 10px 45px;
+            border-radius: 3px;
+            background-image: url('../../cdn.mrright.in/cdn/SignInAssets/FB-f-Logo__white_296a53.png?sv=2020-04-08&amp;si=MrRightCDNAccessPolicy&amp;sr=c&amp;sig=%2B6fs9xgu5wLh9HEJ0lNaoOt8HIH6CHQYpw5F0vISsdk%3D');
+            background-repeat: no-repeat;
+            background-position: 5px center;
+            text-decoration: none;
+        }
+    </style>
+    <script>
+        var grecaptcha_widget_login, grecaptcha_widget_signup;
+        var onloadCallback = function () {
+            grecaptcha_widget_login = grecaptcha.render("grecaptcha--login", {
+                "sitekey": "6LcnEEMUAAAAAPXNu7i4JokgqKn2cAeGT9LWTvVh",
+                "callback": "sendOTPLogin",
+                "size": "invisible",
+                "badge":"inline"
+            });
+            grecaptcha_widget_signup = grecaptcha.render("grecaptcha--signup", {
+                "sitekey": "6LcnEEMUAAAAAPXNu7i4JokgqKn2cAeGT9LWTvVh",
+                "callback": "sendOTPSignUp",
+                "size": "invisible",
+                "badge": "inline"
+            });
+
+        };
+    </script>
+    <script type="text/javascript" src="../../www.google.com/recaptcha/api85f1.js?onload=onloadCallback&amp;render=explicit" async defer></script>
+</head>
+<body>
+
+    <div class="row flex-box">
+        <div class="col-md-8">
+            <div class="mobile-app-cta text-center">
+                <div class="section-title">
+                    <h2>Hate logging in? </h2>
+                    <h4>Download our free app and never login again :)</h4>
+                </div>
+
+                <a href="http://mrrt.in/android-app-mr" class="android-app-link" alt="Download on Google play">
+                    <img src="../../cdn.mrright.in/cdn/android%20badge6a53.png?sv=2020-04-08&amp;si=MrRightCDNAccessPolicy&amp;sr=c&amp;sig=%2B6fs9xgu5wLh9HEJ0lNaoOt8HIH6CHQYpw5F0vISsdk%3D" />
+                </a>
+                <a href="http://mrrt.in/ios-app-mr" class="ios-app-link" alt="Download on App Store">
+                    <img src="../../cdn.mrright.in/cdn/app_store_badge6a53.png?sv=2020-04-08&amp;si=MrRightCDNAccessPolicy&amp;sr=c&amp;sig=%2B6fs9xgu5wLh9HEJ0lNaoOt8HIH6CHQYpw5F0vISsdk%3D" />
+                </a>
+                <div class="clearfix"></div>
+                <img class="mobile-app-shot" src="../img/mobile-app-screen-shot.png" alt="mr right mobile app screenshot" />
+            </div>
+        </div>
+        <div class="col-md-4 login-box">
+            <div class="welcome-wrapper">
+               <!-- <img class="logo" src="../../cdn.mrright.in/cdn/app-icon-logo6a53.png?sv=2020-04-08&amp;si=MrRightCDNAccessPolicy&amp;sr=c&amp;sig=%2B6fs9xgu5wLh9HEJ0lNaoOt8HIH6CHQYpw5F0vISsdk%3D" />
+                -->
+            </div>
+            <div class="spacer"></div>
+            <div class="spacer"></div>
+            <div class="signup-section hidden" id="signup-section">
+                <form role="form" method="post" action="https://www.mrright.in/Account/Signup" class="ext-validation-form">
+                    <p class="weak signup-mobile">SignUp with your mobile number</p>
+                    <div class="form-group signup-mobilenumber">
+                        <input type="text" name="mobileNumber" id="mobileNumber" class="form-control " autocomplete="on" placeholder="Mobile Number" required="required" />
+                    </div>
+                    <div class="form-group">
+                        <input type="text" name="fullName" id="fullname" class="form-control fullname" autocomplete="on" placeholder="Full-Name" required="required" />
+                    </div>
+                    <p class="weak otp-label hidden"><strong>One last thing!</strong><br />We're checking if you're telling the truth! We've sent a OTP to your mobile number.</p>
+                    <div class="form-group hidden otp-input-box">
+                        <input type="text" class="form-control Otp-Number" placeholder="Enter your OTP" required="required" />
+                    </div>
+                    <div class="form-group btn-otp-submit hidden">
+                        <button type="submit" id="btn-otp-button" data-loading-text="Signing Up..." class="btn btn-block btn-primary">
+                            Submit
+                        </button>
+                    </div>
+                    <div class="form-group">
+                        <button type="submit" id="btn-new-button" data-loading-text="Signing Up..." class="btn btn-block btn-primary btn-new-button">
+                            Sign Up
+                        </button>
+                    </div>
+                    <div class="g-recaptcha" id="grecaptcha--signup" style="display:none;">
+                    </div>
+                    
+                </form>
+                <hr />
+                <div class="social-login-wrapper">
+                    <i class="fa fa-refresh social-loader fa-spin"></i>
+                    <p class="weak">or, SignUp with your social account</p>
+                    <a href="#" class="btn--new-google-login" data-social-login="google">
+                        <img class="btn--normal" src="../../cdn.mrright.in/cdn/SignInAssets/btn_google_signin_dark_normal_web6a53.png?sv=2020-04-08&amp;si=MrRightCDNAccessPolicy&amp;sr=c&amp;sig=%2B6fs9xgu5wLh9HEJ0lNaoOt8HIH6CHQYpw5F0vISsdk%3D" />
+                        <img class="btn--active" src="../../cdn.mrright.in/cdn/SignInAssets/btn_google_signin_dark_pressed_web6a53.png?sv=2020-04-08&amp;si=MrRightCDNAccessPolicy&amp;sr=c&amp;sig=%2B6fs9xgu5wLh9HEJ0lNaoOt8HIH6CHQYpw5F0vISsdk%3D" />
+                        <img class="btn--focus" src="../../cdn.mrright.in/cdn/SignInAssets/btn_google_signin_dark_focus_web6a53.png?sv=2020-04-08&amp;si=MrRightCDNAccessPolicy&amp;sr=c&amp;sig=%2B6fs9xgu5wLh9HEJ0lNaoOt8HIH6CHQYpw5F0vISsdk%3D" />
+                    </a>
+                    <div class="spacer-small"></div>
+                    <a href="#" class="btn--new-facebook-login" data-social-login="facebook">Continue with Facebook</a>
+                    
+                </div>
+                <div class="message-section">
+                    
+                    
+                    <span class="form-group required-fields-warning warning-login">
+                    </span>
+                </div>
+                <div class="spacer"></div>
+                <a href="#" class="signup-option">Returning user? Log in here</a>
+            </div>
+            <div class="login-section" id="login-section" role="tabpanel">
+                <p class="weak">Login with</p>
+                <ul class="nav nav-tabs nav-justified tabs--login-options">
+                    <li class="active"><a href="#tab--mobilenumber" data-toggle="tab">Mobile Number</a></li>
+                    <li><a href="#tab--username" data-toggle="tab">Username</a></li>
+                </ul>
+                <div class="spacer">&nbsp;</div>
+                <div class="tab-content">
+                    <div class="tab-pane active" id="tab--mobilenumber">
+                        <div class="tab-content tabs--otp">
+                            <div class="tab-pane active" id="tab--get-otp">
+                                <div class="form-group">
+                                    <input type="text" name="mobileNumber" id="input--mobile-number" class="form-control" autocomplete="on" placeholder="Mobile Number" required="required" />
+                                </div>
+
+                                <div class="form-group">
+                                    <button id="btn--get-otp" data-loading-text="Sending OTP..." class="btn btn-block btn-primary">
+                                        Get OTP
+                                    </button>
+                                </div>
+                            </div>
+                            <div class="tab-pane" id="tab--verify-otp">
+                                <p>Enter OTP</p>
+                                <div class="form-group">
+                                    <input type="text" name="otp" id="input--otp" class="form-control" autocomplete="on" required="required" />
+                                </div>
+                                <div class="form-group">
+                                    <button class="btn btn-default" data-toggle="tab" data-target="#tab--get-otp"><i class="fa fa-chevron-left"></i> Back</button>
+                                    <button id="btn--verify-otp" data-loading-text="Verifying..." class="btn btn-primary">
+                                        Login
+                                    </button>
+                                    <div class="g-recaptcha" id="grecaptcha--login" style="display:none"></div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="tab-pane" id="tab--username">
+                        <form role="form" method="post" action="https://www.mrright.in/Account/Login" class="sign-in">
+                            <div class="form-group">
+                                <input type="text" name="userName" id="username" class="form-control" autocomplete="on" placeholder="Username" required="required" />
+                            </div>
+                            <div class="form-group">
+                                <input type="password" id="password" name="password" class="form-control" placeholder="Password" required="required" />
+                            </div>
+                            <div class="form-group">
+                                <button type="submit" id="signinbutton" data-loading-text="Signing in..." class="btn btn-block btn-primary">
+                                    Sign in
+                                </button>
+                            </div>
+                            <div class="form-group">
+                                <a href="#" id="case-launcher-forgot-password">
+                                    Forgot Password? Generate New
+                                </a>
+                                <div class="clearfix"></div>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+                <hr />
+                <div class="social-login-wrapper">
+                    <i class="fa fa-refresh social-loader fa-spin"></i>
+                    <p class="weak">or, Login with your social account</p>
+                    <a href="#" class="btn--new-google-login" data-social-login="google">
+                        <img class="btn--normal" src="../../cdn.mrright.in/cdn/SignInAssets/btn_google_signin_dark_normal_web6a53.png?sv=2020-04-08&amp;si=MrRightCDNAccessPolicy&amp;sr=c&amp;sig=%2B6fs9xgu5wLh9HEJ0lNaoOt8HIH6CHQYpw5F0vISsdk%3D" />
+                        <img class="btn--active" src="../../cdn.mrright.in/cdn/SignInAssets/btn_google_signin_dark_pressed_web6a53.png?sv=2020-04-08&amp;si=MrRightCDNAccessPolicy&amp;sr=c&amp;sig=%2B6fs9xgu5wLh9HEJ0lNaoOt8HIH6CHQYpw5F0vISsdk%3D" />
+                        <img class="btn--focus" src="../../cdn.mrright.in/cdn/SignInAssets/btn_google_signin_dark_focus_web6a53.png?sv=2020-04-08&amp;si=MrRightCDNAccessPolicy&amp;sr=c&amp;sig=%2B6fs9xgu5wLh9HEJ0lNaoOt8HIH6CHQYpw5F0vISsdk%3D" />
+                    </a>
+                    <div class="spacer-small"></div>
+                    <a href="#" class="btn--new-facebook-login" data-social-login="facebook">Continue with Facebook</a>
+                    
+                </div>
+                <div class="message-section">
+                    
+                    
+                    <span class="form-group required-fields-warning warning-login">
+                    </span>
+                </div>
+                <div class="spacer">
+                    <a href="#" class="login-option">New user? Sign up here</a>
+                </div>
+            </div>
+        </div>
+
+    </div>
+
+    <div id="fb-root"></div>
+    <div class="modal fade" id="loginFeedbackModal" tabindex="-1" role="dialog" aria-labelledby="loginFeedbackModal" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-body">
+                    Uh oh! Either the username or password you entered didn't work. Did you
+                    <a href="forgotpassword.html">Forget</a> your password?
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script>
+        function sendOTPSignUp(captchaResponse) {
+            if (!captchaResponse || captchaResponse == undefined || captchaResponse == 'undefined' || captchaResponse == null) {
+                return false;
+            }
+            var mobileNumber = $('#mobileNumber').val();
+            ga('send', 'event', 'OTP', 'Request', 'Login');
+            $.ajax({
+                url: `/account/generateotp?grecaptcha=${captchaResponse}&mobileNumber=${mobileNumber}`,
+                success: function (res) {
+                    if (res.Success) {
+                        if (res.Exists == 1) {
+                            showMessage("success", "You are a existing  user! Please head to our login page.");
+
+                        }
+                        if (res.Exists == 0) {
+                            $('.otp-input-box').removeClass('hidden');
+                            $('.otp-label').removeClass('hidden');
+                            $('.signup-mobile').addClass('hidden');
+                            $('.signup-mobilenumber').addClass('hidden');
+                            $('.btn-new-button').addClass('hidden');
+                            $('.btn-otp-submit').removeClass('hidden');
+                            $('.fullname').addClass('hidden');
+
+                        }
+                    }
+                    else {
+                        ga('send', 'event', 'OTP', 'Failed to Generate', 'Login');
+                        showMessage("success", "OTP sent to your mobile number");
+                    }
+                },
+                complete: function () {
+                    grecaptcha.reset(grecaptcha_widget_signup);
+                }
+            });
+        }
+        function sendOTPLogin(captchaResponse) {
+            if (!captchaResponse || captchaResponse == undefined || captchaResponse == 'undefined' || captchaResponse == null) {
+                showMessage("error", "Couldn't generate OTP. Please try later.");
+                return false;
+            }
+            var mobileNumber = $('#input--mobile-number').val();
+            var $thisBtn = $('#btn--get-otp');
+            $.ajax({
+                url: `/account/generateotp?grecaptcha=${captchaResponse}&mobileNumber=${mobileNumber}`,
+                beforeSend: function () {
+                    $thisBtn.button('loading');
+                },
+                success: function (res) {
+                    if (res.Success) {
+                        if (res.Exists === 1) {
+                            $('.tabs--otp .tab-pane').removeClass('active');
+                            $('#tab--verify-otp').addClass('active');
+                        }
+                        else {
+                            showMessage('error', "Account doesn't exist. Please use signup.");
+                        }
+                    }
+                    else {
+                        ga('send', 'event', 'OTP', 'Failed to Generate', 'Login');
+                    }
+                },
+                error: function () {
+                    showMessage('error', 'Seems like an error occurred. You can always try again or try other login options.');
+                },
+
+                complete: function () {
+                    $thisBtn.button('reset');
+                    grecaptcha.reset(grecaptcha_widget_login);
+                }
+            });
+        }
+        $(document).ready(function () {
+            $('#btn--get-otp').on('click', function () {
+                var mobileNumber = $('#input--mobile-number').val();
+                if (!validateUserName(mobileNumber)) {
+                    showMessage('error', 'Please enter a valid 10 digit mobile number');
+                    return false;
+                }
+
+                grecaptcha.execute(grecaptcha_widget_login);
+            });
+
+            $('#input--mobile-number').keydown(function (e) {
+                var val = $(this).val();
+                if (e.keyCode === 13) {
+                    $('#btn--get-otp').trigger('click');
+                }
+            });
+
+            $('#btn--verify-otp').on('click', function () {
+                var $thisBtn = $(this),
+                    mobileNumber = $('#input--mobile-number').val(),
+                    otp = $('#input--otp').val();
+                if (!/^\d{6}$/.test(otp)) {
+                    showMessage('error', 'This is not a valid 6 digit OTP.');
+                    return false;
+                }
+                ga('send', 'event', 'OTP', 'Verify', 'Login');
+                $.ajax({
+                    url: '/account/verifyotp?otp=' + otp + '&mobilenumber=' + mobileNumber + '&setlogin=true',
+                    beforeSend: function () {
+                        $thisBtn.button('loading');
+                    },
+                    success: function (res) {
+                        if (res.Success) {
+                            location.reload();
+                        }
+                        else {
+                            ga('send', 'event', 'OTP', 'Failed Verification', 'Login');
+                            showMessage('error', 'Uh Oh! Seems like this OTP is not valid. Please try again.');
+                        }
+                    },
+                    error: function () {
+                        showMessage('error', 'Seems like an error occurred. You can always try again or try other login options.');
+                    },
+                    complete: function () {
+                        $thisBtn.button('reset');
+                    }
+                });
+            });
+
+            $('#input--otp').keydown(function (e) {
+                var val = $(this).val();
+                if (e.keyCode === 13) {
+                    $('#btn--verify-otp').trigger('click');
+                }
+            });
+
+            $('.signup-option').on("click", function () {
+                $('.login-section').removeClass('hidden');
+                $('.signup-section').addClass('hidden');
+            });
+
+            $('.login-option').on("click", function () {
+                $('.login-section').addClass('hidden');
+                $('.signup-section').removeClass('hidden');
+            });
+
+
+            $('.login-box').removeClass('invalid');
+
+            $('#password').on('focus,keypress', function () {
+                $(this).removeClass('redBorder');
+            });
+
+
+            $('#signinbutton').on('click', function (e) {
+                e.preventDefault();
+                var btn = $(this);
+                btn.button('loading');
+                $('#password').removeClass('redBorder');
+                $('.login-box').find('h4.redColor').remove();
+                inputFeedback(false);
+                if ($('#username').val().length < 1 || $('#password').val().length < 1) {
+                    inputFeedback(true, "empty");
+                    btn.button('reset');
+                    return false;
+                }
+                data = "userName=" + $('#username').val() + "&password=" + $('#password').val();
+
+                $.ajax({
+                    url: '/Account/Login',
+                    type: "post",
+                    data: data,
+                    beforeSend: function () {
+                        inputFeedback(true, "loader");
+                    },
+                    success: function (res) {
+                        inputFeedback(false);
+                        showLoginFeedback(res.Login);
+                        if (res.Login == 1) {
+                            localStorage.setItem('login--mobilenumber', $('#username').val());
+                            location.href = res.Href;
+                        }
+                        else {
+                            btn.button('reset');
+                        }
+                    }
+                })
+            });
+
+
+            $('#case-launcher-forgot-password').on('click', function () {
+                var mobileNumber = $('input[name="userName"]');
+                var validUsername = validateUserName(mobileNumber.val());
+                if (!validUsername) {
+                    $('.required-fields-warning label, input[name="userName"]').text("We need a valid mobile number to send new password").show().addClass('shakeAnimation');
+                    setTimeout(function () {
+                        $('.required-fields-warning label, input[name="userName"]').removeClass('shakeAnimation');
+                    }, 600);
+                }
+                else {
+                    $.ajax({
+                        url: "/Account/RegeneratePassword",
+                        data: "username=" + mobileNumber.val(),
+                        beforeSend: function () {
+                            $('.new-case-form .new-case-loader').show();
+                        },
+                        complete: function () {
+                            $('.new-case-form .new-case-loader').hide();
+                        },
+                        success: function (res) {
+                            if (res.Success) {
+                                showMessage("success", res.Message);
+                                $('#existing-user-password').prop("placeholder", "Your new password!");
+                            }
+                            else {
+                                $('.required-fields-warning label').text(res.Message).show().addClass('shakeAnimation');
+                                setTimeout(function () {
+                                    $('.required-fields-warning label').removeClass('shakeAnimation');
+                                }, 600);
+                            }
+                        }
+                    });
+                }
+            });
+            $('input[name="userName"]').on('blur', function (e) {
+                var validPhone = /^\d{10}$/.test($('input[name="userName"]').val());
+                if (!validPhone) {
+                    $('.required-fields-warning label').text('Please enter a valid 10 digit phone number.').show().addClass('shakeAnimation');
+                    setTimeout(function () {
+                        $('.required-fields-warning label').removeClass('shakeAnimation');
+                        $('.lbl-required:after').css({ color: "rgb(251, 130, 130)" });
+                    }, 600);
+                }
+                else {
+                    $('.required-fields-warning label').hide();
+                    $.ajax({
+                        url: "/Home/CheckUser",
+                        data: "Username=" + $(this).val(),
+                        beforeSend: function () {
+                            $('.new-case-form .new-case-loader').show();
+                        },
+                        complete: function () {
+                            $('.new-case-form .new-case-loader').hide();
+                        },
+                        success: function (res) {
+                            if (res == 1) {
+                                showMessage("success", "Good to see you back!");
+                            }
+                            else {
+                                toggleForExistingUser(false);
+                            }
+                        }
+                    });
+                }
+            });
+
+            $('input[name="mobileNumber"]').on('blur', function (e) {
+                var validPhone = /^\d{10}$/.test($('input[name="mobileNumber"]').val());
+                if (!validPhone) {
+                    $('.required-fields-warning label').text('Please enter a valid 10 digit phone number.').show().addClass('shakeAnimation');
+                    setTimeout(function () {
+                        $('.required-fields-warning label').removeClass('shakeAnimation');
+                        $('.lbl-required:after').css({ color: "rgb(251, 130, 130)" });
+                    }, 600);
+                }
+                else {
+                    $('.required-fields-warning label').hide();
+                    $.ajax({
+                        url: "/Home/CheckUser",
+                        data: "Username=" + $(this).val(),
+                        beforeSend: function () {
+                            $('.new-case-form .new-case-loader').show();
+                        },
+                        complete: function () {
+                            $('.new-case-form .new-case-loader').hide();
+                        },
+                        success: function (res) {
+                            if (res == 1) {
+                                showMessage("success", "Good to see you back!");
+                            }
+                            else {
+                                toggleForExistingUser(false);
+                            }
+                        }
+                    });
+                }
+            });
+            $('#btn-new-button').on('click', function (e) {
+                e.preventDefault();
+                var form = $('.ext-validation-form');
+                var validated = true,
+                    validateMessage = "";
+
+                if (!checkMobileNumber()) {
+                    validated = false;
+                    validateMessage = "Please provide a valid 10 digit mobile number";
+                }
+
+                if (!validated) {
+                    $('.required-fields-warning label').text(validateMessage).show().addClass('shakeAnimation');
+                    setTimeout(function () {
+                        $('.required-fields-warning label').removeClass('shakeAnimation');
+                        $('.lbl-required:after').css({ color: "rgb(251, 130, 130)" });
+                    }, 600);
+                }
+                else {
+                    var mobileNumber = $('input[name="mobileNumber"]').val();
+                    grecaptcha.execute(grecaptcha_widget_signup);
+                }
+            });
+            $('#btn-otp-button').on('click', function (e) {
+                e.preventDefault();
+                var form = $('.ext-validation-form');
+                var validated = true,
+                    validateMessage = "";
+
+                var mobileNumber = $('input[name="mobileNumber"]');
+                var otpnumber = $('.Otp-Number').val();
+                $.ajax({
+                    url: "/Account/Validate",
+                    data: "mobileNumber=" + mobileNumber.val() + "&otpCode=" + otpnumber,
+                    type: 'post',
+                    success: function (res) {
+                        if (res.Success == true) {
+                            form.submit();
+                            showMessage("success", "All good! Lets proceed.");
+                        }
+                        if (res.Success == false)
+                            showMessage("success", "Liar! You OTP doesn't match. Try again or contact our support team at support@mrright.in");
+                    }
+                });
+            });
+        });
+
+        function showMessage(type, message) {
+            var htmlToAppend = "<div class='notification'>" + message + "</div>  ";
+            $('.notification').remove();
+            $('body').append(htmlToAppend);
+
+            setTimeout(function () {
+                $('.notification').fadeOut(2000, function () {
+                    $(this).remove();
+                })
+            }, 8000);
+        }
+        function showLoginFeedback(login) {
+            $('.wrong-password').remove();
+            switch (login) {
+                case -1: {
+                    $('.wrong-password').remove();
+                    $('#password').after('<h4 class="redColor text-left wrong-password">You account is blocked. Please contact admin at info@mrright.in.</h4>');
+                }
+                    break;
+                case 1: {
+                    inputFeedback(true, "check");
+                }
+                    break;
+                case 0: {
+                    invalidPassword();
+                    $('#password').after('<h4 class="redColor text-left wrong-password">Uh oh! Seems like the username or password you used, didn\'t work. Try again or use the link below.</h4>');
+                }
+                    break;
+                case -2: {
+                    invalidPassword();
+                    $('.wrong-password').remove();
+                    $('#password').after('<h4 class="redColor text-left wrong-password">"Your account is temporarily locked out due to multiple invalid attempts. Please contact our support team at support@mrright.in"</h4>');
+                }
+                    break;
+                case 2: {
+
+                    $(".text-left").empty();
+                    inputFeedback(true, "empty");
+                    $('#password').after('<h4 class="redColor text-left">Only owner can access this account.</h4>');
+                }
+                    break;
+            }
+        }
+        function inputFeedback(isVisibile, type) {
+            if (isVisibile) {
+                switch (type) {
+                    case "loader": $('#password').addClass("hasFeedback").after('<span class="inputFeedback"><img src="https://cdn.mrright.in/cdn/ajax-loader.gif?sv=2020-04-08&si=MrRightCDNAccessPolicy&sr=c&sig=%2B6fs9xgu5wLh9HEJ0lNaoOt8HIH6CHQYpw5F0vISsdk%3D" alt="loading.."/></span>');
+                        break;
+                    case "check": $('#password').addClass("hasFeedback").after('<span class="inputFeedback"><i class="glyphicon glyphicon-ok-circle"></i></span>');
+                        break;
+                    case "empty": {
+                        if ($('#username').val().length < 1)
+                            $('#username').addClass("hasFeedback").after('<span class="inputFeedback"><i class="glyphicon glyphicon-exclamation-sign"></i></span>');
+                        if ($('#password').val().length < 1)
+                            $('#password').addClass("hasFeedback").after('<span class="inputFeedback"><i class="glyphicon glyphicon-exclamation-sign"></i></span>');
+                    }
+                        break;
+                }
+            }
+            else {
+                $('span.inputFeedback').remove();
+                $('#password').removeClass('hasFeedback');
+            }
+        }
+        function invalidPassword() {
+            $('#password').addClass('redBorder');
+            $('.login-box').addClass('invalid');
+            setTimeout(function () {
+                $('.login-box').removeClass('invalid');
+            }, 600);
+        }
+        function checkMobileNumber() {
+            var mobileNumber = $('input[name="mobileNumber"]');
+            if (!mobileNumber.val())
+                return false;
+            var validPhone = /^\d{10}$/.test(mobileNumber.val());
+            if (!validPhone) {
+                return false;
+            }
+            return true;
+        }
+
+        function validateUserName(username) {
+            if (!/^\d{10}$/.test(username)) {
+                if (!/@mrright.in\s*$/i.test(username)) {
+                    return false;
+                }
+            }
+            return true;
+        }
+
+
+    </script>
+</body>
+
+<!-- Mirrored from www.mrright.in/account/login by HTTrack Website Copier/3.x [XR&CO'2014], Sat, 10 Sep 2022 02:58:52 GMT -->
+</html>

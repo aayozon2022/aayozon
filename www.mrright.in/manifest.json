@@ -1,0 +1,31 @@
+﻿{
+  "name": "Mr. Right",
+  "short_name": "Mr. Right",
+  "description": "Pros right on demand",
+  "icons": [
+    {
+      "src": "https://cdn.mrright.in/cdn/app-icon-logo.png?sv=2020-04-08&si=MrRightCDNAccessPolicy&sr=c&sig=%2B6fs9xgu5wLh9HEJ0lNaoOt8HIH6CHQYpw5F0vISsdk%3D",
+      "sizes": "192x192",
+      "type": "image/png"
+    }
+  ],
+  "start_url": "./",
+  "display": "standalone",
+  "prefer_related_applications": true,
+  "related_applications": [
+    {
+      "platform": "play",
+      "url": "https://play.google.com/store/apps/details?id=in.kaaryaa.mrright.customer&hl=en",
+      "id": "in.kaaryaa.mrright.customer"
+    },
+    {
+      "platform": "itunes",
+      "url": "https://itunes.apple.com/in/app/mrright.in-hire-local-pros/id966110610?mt=8"
+    }
+  ],
+  "gcm_sender_id": "967165395085",
+  "gcm_user_visible_only": true,
+  "permissions": [
+    "gcm"
+  ]
+}
