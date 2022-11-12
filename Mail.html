@@ -3,16 +3,19 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>Booking Form</title>
 </head>
-<body>
+<!--<body style="background-color:MediumVioletRed">-->
+<body style="background-color:MidnightBlue">
+<!--<body background-image : url('/img/green.png') background-repeat="no-repeat” background-size="cover”>-->
   <br>
   <center>
   <form class="gform pure-form pure-form-stacked" method="POST" data-email="aayozon2022@gmail.com"
   action="https://script.google.com/macros/s/AKfycbzF28VtgW77BvCbl3k4QvmAPl0xjsL_zklRJ0V06sZayhVahtXJsjfyKmH36XhfRVbX2Q/exec">
     <div class="form-elements"><br>
-      <div style="background:none;border:8px solid gray;border-radius: 30px;width: 400px;padding-top: 15px;padding-bottom: 40px;padding-left: 20px;padding-right: 20px;"><br>
-        <b class="content-head" style="font-size: 2.3em;">Contact Us!</b>
+      <div style="background:Gold;border:8px solid gray;border-radius: 30px;width: 400px;padding-top: 15px;padding-bottom: 40px;padding-left: 20px;padding-right: 20px;"><br>
+        <b class="content-head" style="font-size: 2.3em;">Quick Book</b>
         <br><br>
          <b style="margin-left: -255px;font-size: 1.3em;">Name</b><br>
         <input type="text" name="name" required="" style="font-size: 1em;width: 300px;"/><br><br>
@@ -23,16 +26,19 @@
          <b style="margin-left: -255px;font-size: 1.3em;">Phone</b><br>
          <input type="number"  name="phone" required="" style="font-size: 1em;width: 300px;"/><br><br>
       
-        <b style="margin-left: -110px;font-size: 1.3em;">How can we help you?</b><br>
-        <textarea  name="message" rows="5" cols="22" required="" style="font-size: 1.3em;width: 300px;"></textarea><br><br>
+        <b style="margin-left: -250px;font-size: 1.3em;">Service</b><br>
+        <input type="text" name="service" required="" style="font-size: 1em;width: 300px;"/><br><br>
+        
+        <b style="margin-left: -267px;font-size: 1.3em;">Date</b><br>
+        <input type="datetime-local" name="servicedate" required="" style="font-size: 1em;width: 300px;"/><br><br>
     
         <button style="float: right;width: 100px;height: 27px;font-size: 1.1em;margin-right: 48px;">
-        send</button><br>
+        Book Now</button><br>
       </div>
     </div>
 
     <!-- Thankyou_message --><br>
-    <div class="thankyou_message" style="display:none;background:none;border:8px solid gray;border-radius: 40px;width: 400px;padding-top: 15px;padding-bottom: 40px;padding-left: 20px;padding-right: 20px;"><br><br>
+    <div class="thankyou_message" style="display:none;background:Gold;border:8px solid gray;border-radius: 40px;width: 400px;padding-top: 15px;padding-bottom: 40px;padding-left: 20px;padding-right: 20px;"><br><br>
       <h1>Thanks for Booking. Booking Confirmed !</h1>
       <h1>*******</h1>
       <p><a href="https://aayozon.org/Payment">Pay Now</a></p>
